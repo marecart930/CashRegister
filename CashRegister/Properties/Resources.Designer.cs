@@ -69,5 +69,14 @@ namespace CashRegister.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Whopper_Whopper__Extended_ {
+            get {
+                return ResourceManager.GetStream("Whopper_Whopper__Extended_", resourceCulture);
+            }
+        }
     }
 }

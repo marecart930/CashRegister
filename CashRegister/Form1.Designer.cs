@@ -47,7 +47,7 @@
             this.subtotalOutput = new System.Windows.Forms.Label();
             this.taxOutput = new System.Windows.Forms.Label();
             this.totalOutput = new System.Windows.Forms.Label();
-            this.funnyLabel = new System.Windows.Forms.Label();
+            this.reciptLabel = new System.Windows.Forms.Label();
             this.changeOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -190,15 +190,17 @@
             this.printButton.TabIndex = 16;
             this.printButton.Text = "Print Receipt ";
             this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
             // orderButton
             // 
             this.orderButton.Location = new System.Drawing.Point(268, 316);
             this.orderButton.Name = "orderButton";
-            this.orderButton.Size = new System.Drawing.Size(158, 23);
+            this.orderButton.Size = new System.Drawing.Size(257, 23);
             this.orderButton.TabIndex = 17;
             this.orderButton.Text = "New Order";
             this.orderButton.UseVisualStyleBackColor = true;
+            this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
             // 
             // subtotalOutput
             // 
@@ -206,9 +208,8 @@
             this.subtotalOutput.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subtotalOutput.Location = new System.Drawing.Point(148, 133);
             this.subtotalOutput.Name = "subtotalOutput";
-            this.subtotalOutput.Size = new System.Drawing.Size(45, 16);
+            this.subtotalOutput.Size = new System.Drawing.Size(0, 16);
             this.subtotalOutput.TabIndex = 18;
-            this.subtotalOutput.Text = "label9";
             // 
             // taxOutput
             // 
@@ -216,9 +217,9 @@
             this.taxOutput.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taxOutput.Location = new System.Drawing.Point(140, 165);
             this.taxOutput.Name = "taxOutput";
-            this.taxOutput.Size = new System.Drawing.Size(53, 16);
+            this.taxOutput.Size = new System.Drawing.Size(0, 16);
             this.taxOutput.TabIndex = 19;
-            this.taxOutput.Text = "label10";
+            this.taxOutput.Click += new System.EventHandler(this.taxOutput_Click);
             // 
             // totalOutput
             // 
@@ -226,20 +227,18 @@
             this.totalOutput.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalOutput.Location = new System.Drawing.Point(140, 195);
             this.totalOutput.Name = "totalOutput";
-            this.totalOutput.Size = new System.Drawing.Size(53, 16);
+            this.totalOutput.Size = new System.Drawing.Size(0, 16);
             this.totalOutput.TabIndex = 20;
-            this.totalOutput.Text = "label11";
             // 
-            // funnyLabel
+            // reciptLabel
             // 
-            this.funnyLabel.BackColor = System.Drawing.Color.White;
-            this.funnyLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.funnyLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.funnyLabel.Location = new System.Drawing.Point(268, 17);
-            this.funnyLabel.Name = "funnyLabel";
-            this.funnyLabel.Size = new System.Drawing.Size(158, 288);
-            this.funnyLabel.TabIndex = 21;
-            this.funnyLabel.Text = "label12";
+            this.reciptLabel.BackColor = System.Drawing.Color.White;
+            this.reciptLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.reciptLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reciptLabel.Location = new System.Drawing.Point(268, 17);
+            this.reciptLabel.Name = "reciptLabel";
+            this.reciptLabel.Size = new System.Drawing.Size(257, 288);
+            this.reciptLabel.TabIndex = 21;
             // 
             // changeOutput
             // 
@@ -247,17 +246,16 @@
             this.changeOutput.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeOutput.Location = new System.Drawing.Point(137, 289);
             this.changeOutput.Name = "changeOutput";
-            this.changeOutput.Size = new System.Drawing.Size(56, 16);
+            this.changeOutput.Size = new System.Drawing.Size(0, 16);
             this.changeOutput.TabIndex = 22;
-            this.changeOutput.Text = "Change";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 349);
+            this.ClientSize = new System.Drawing.Size(537, 349);
             this.Controls.Add(this.changeOutput);
-            this.Controls.Add(this.funnyLabel);
+            this.Controls.Add(this.reciptLabel);
             this.Controls.Add(this.totalOutput);
             this.Controls.Add(this.taxOutput);
             this.Controls.Add(this.subtotalOutput);
@@ -305,7 +303,7 @@
         private System.Windows.Forms.Label subtotalOutput;
         private System.Windows.Forms.Label taxOutput;
         private System.Windows.Forms.Label totalOutput;
-        private System.Windows.Forms.Label funnyLabel;
+        private System.Windows.Forms.Label reciptLabel;
         private System.Windows.Forms.Label changeOutput;
     }
 }
