@@ -38,18 +38,18 @@ namespace CashRegister
 
                 //outputs 
 
-                reciptLabel.Text = $" Whopper King";
-                reciptLabel.Text += $"\n Order Number: 1";
-                reciptLabel.Text += $"\n\n Febuary 27th";
-                reciptLabel.Text += $"\n\n Junior Whopper x{juniorNumber} @ {juniorPrice}";
-                reciptLabel.Text += $"\n Double Whopper x{doubleNumber} @ {doublePrice}";
-                reciptLabel.Text += $"\n Tripple Whopper x {trippleNumber} @ {tripplePrice}";
-                reciptLabel.Text += $"\n\n Subtotal {subTotal.ToString("C")}";
-                reciptLabel.Text += $"\n Total {total.ToString("C")}";
-                reciptLabel.Text += $"\n Tax {tax.ToString("C")}";
-                reciptLabel.Text += $"\n\n Tendered {tendered.ToString("C")}";
-                reciptLabel.Text += $"\n Change {change.ToString("C")}";
-                reciptLabel.Text += $"\n\n Have a nice day!";
+                reciptLabel.Text = $"                  Whopper King";
+                reciptLabel.Text += $"\n\n   Order Number: 1";
+                reciptLabel.Text += $"\n   Febuary 27th";
+                reciptLabel.Text += $"\n\n   Junior Whopper    x {juniorNumber} @ {juniorPrice}";
+                reciptLabel.Text += $"\n   Double Whopper  x {doubleNumber} @ {doublePrice}";
+                reciptLabel.Text += $"\n   Tripple Whopper  x {trippleNumber} @ {tripplePrice}";
+                reciptLabel.Text += $"\n\n   Subtotal                       {subTotal.ToString("C")}";
+                reciptLabel.Text += $"\n   Total                            {total.ToString("C")}";
+                reciptLabel.Text += $"\n   Tax                                {tax.ToString("C")}";
+                reciptLabel.Text += $"\n\n   Tendered                     {tendered.ToString("C")}";
+                reciptLabel.Text += $"\n   Change                          {change.ToString("C")}";
+                reciptLabel.Text += $"\n\n   Have a nice day!";
             }
             catch { }
             }
@@ -68,6 +68,11 @@ namespace CashRegister
         }
 
         private void taxOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

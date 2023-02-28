@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.juniorLabel = new System.Windows.Forms.Label();
             this.doubleLabel = new System.Windows.Forms.Label();
             this.trippleLabel = new System.Windows.Forms.Label();
@@ -275,8 +276,10 @@
             this.Controls.Add(this.trippleLabel);
             this.Controls.Add(this.doubleLabel);
             this.Controls.Add(this.juniorLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Whopper King";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
